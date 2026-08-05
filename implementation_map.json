@@ -1,0 +1,13 @@
+{
+  "equations_1_4": ["code/ecpc_pinn/models/physics.py", "code/ecpc_pinn/losses/objectives.py"],
+  "equations_5_7": ["code/ecpc_pinn/models/physics.py", "code/ecpc_pinn/losses/objectives.py"],
+  "equations_8_10": ["code/ecpc_pinn/models/physics.py", "code/ecpc_pinn/losses/objectives.py"],
+  "equations_11_14": ["code/ecpc_pinn/models/physics.py", "code/ecpc_pinn/models/system.py"],
+  "equations_15_16": ["code/ecpc_pinn/models/system.py", "code/ecpc_pinn/losses/objectives.py"],
+  "equations_17_19": ["code/ecpc_pinn/evaluation/conformal.py"],
+  "dataset_protocol": ["code/ecpc_pinn/data/dataset.py", "code/ecpc_pinn/data/graphs.py"],
+  "statistics": ["code/ecpc_pinn/metrics/statistics.py"],
+  "curriculum": ["code/ecpc_pinn/training/engine.py"],
+  "sensitivity_grid": ["code/ecpc_pinn/experiment_catalog.py"]
+}
+

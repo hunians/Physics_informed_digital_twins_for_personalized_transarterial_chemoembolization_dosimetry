@@ -1,0 +1,35 @@
+{
+  "project_name": "ecpc_pinn",
+  "domain": "computational oncology and personalized TACE dosimetry",
+  "framework": "PyTorch with plain torch.nn",
+  "venue": "npj Digital Medicine",
+  "supplementary_material": "embedded extended tables in the main PDF",
+  "datasets": [
+    {
+      "name": "HCC-TACE-Seg",
+      "version": "TCIA collection updated 2022-08-17",
+      "license": "CC BY 4.0",
+      "subjects": 105
+    },
+    {
+      "name": "WAW-TACE",
+      "version": "1, 2024",
+      "license": "CC BY 4.0",
+      "subjects": 233
+    }
+  ],
+  "compute": {
+    "accelerator": "NVIDIA A100",
+    "count": 1,
+    "memory_gb": 40,
+    "training_hours": 4.2,
+    "inference_seconds": 38
+  },
+  "paper_equations": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "reported_tables": 18,
+  "unresolved": [
+    "Methods network width is 64 while extended Table 11 states 256",
+    "batch size, precision, warmup, scheduler, gradient clipping, EMA, and storage are not reported"
+  ]
+}
+

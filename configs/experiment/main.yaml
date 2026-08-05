@@ -1,0 +1,32 @@
+seed: 42
+device: cuda
+precision: fp32
+hidden_width: 256
+hidden_layers: 4
+activation: tanh
+collocation_points: 1000
+learning_rate: 0.001
+optimizer: adam
+weight_decay: 0.0
+batch_size: 1
+gradient_accumulation: 1
+world_size: 1
+epochs:
+  hemodynamics: 198
+  transport: 287
+  oncology: 193
+  joint: 94
+thresholds:
+  velocity_l2re: 0.05
+  drug_r2: 0.80
+  patience: 50
+loss:
+  data: 0.1
+  physics: 1.0
+  transport: 0.8
+  oncology: 0.6
+  inverse_physics: 0.01
+conformal:
+  alpha: 0.10
+  residual_sensitivity: 0.42
+

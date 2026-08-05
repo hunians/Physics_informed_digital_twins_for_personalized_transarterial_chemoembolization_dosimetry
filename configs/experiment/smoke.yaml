@@ -1,0 +1,14 @@
+seed: 7
+device: cpu
+precision: fp32
+hidden_width: 16
+hidden_layers: 2
+collocation_points: 24
+learning_rate: 0.001
+batch_size: 1
+epochs:
+  hemodynamics: 1
+  transport: 1
+  oncology: 1
+  joint: 1
+

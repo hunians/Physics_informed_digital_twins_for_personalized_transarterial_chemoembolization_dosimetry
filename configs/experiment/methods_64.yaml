@@ -1,0 +1,4 @@
+hidden_width: 64
+hidden_layers: 4
+activation: tanh
+

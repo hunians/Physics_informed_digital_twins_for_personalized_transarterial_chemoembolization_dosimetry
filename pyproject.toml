@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools==75.3.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecpc-pinn"
+version = "1.0.0"
+requires-python = ">=3.11"
+dependencies = ["torch==2.5.1", "numpy==1.26.4", "scipy==1.11.4", "scikit-learn==1.3.2", "PyYAML==6.0.2"]
+
+[project.scripts]
+ecpc-train = "ecpc_pinn.cli.train:main"
+ecpc-evaluate = "ecpc_pinn.cli.evaluate:main"
+ecpc-infer = "ecpc_pinn.cli.infer:main"
+
+[tool.setuptools.packages.find]
+where = ["code"]
+
+[tool.pytest.ini_options]
+pythonpath = ["code"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+

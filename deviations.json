@@ -1,0 +1,18 @@
+{
+  "network_width": {
+    "main_value": 256,
+    "alternative_value": 64,
+    "reason": "Extended Table 11 and the design audit identify 256 as the default, while Methods identifies 64."
+  },
+  "unreported_training_fields": {
+    "values": {
+      "batch_size": 1,
+      "precision": "fp32",
+      "weight_decay": 0.0,
+      "gradient_accumulation": 1,
+      "world_size": 1
+    },
+    "reason": "Required runtime fields are absent from the paper and use neutral single-patient PINN defaults."
+  }
+}
+
